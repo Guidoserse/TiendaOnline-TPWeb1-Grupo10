@@ -1,0 +1,257 @@
+.carrito {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.carrito article {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.tabla2 {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    width: 94%;
+    margin: auto;
+}
+
+.tabla2 div{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.tabla2 h4 {
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #FFBF00;
+    color: white;
+    width: 35%;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.tabla2 p {
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    border: 1px solid #FFBF00;
+    width: calc(33.3%);
+    box-sizing: border-box;
+}
+
+main button {
+    background-color: white;
+    border: none;
+}
+
+main button i {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    width: 5%;
+    font-size: 20px;
+    color: #F27405;
+}
+
+.carrito .botonpagar {
+    width: 95%;
+    justify-content: flex-end;
+    margin: 0px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.pagar {
+    width: 90px;
+    height: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+    background: white;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    border: #F279B2 solid 2px;
+    color: #F279B2;
+}
+
+#pagar {
+    display: none;
+}
+
+.modal {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    transition: all 500ms ease;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.contenido {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    justify-items: center;
+    background: white;
+    transition: all 500ms ease;
+    transform: translateY(-30%);
+    transform: translateY(-30%);
+    border-radius: 4px;
+    border: solid #04D99D 2px;
+    position: relative;
+}
+
+#pagar:checked~.modal {
+    opacity: 1;
+    visibility: visible;
+}
+
+#pagar:checked~.modal .contenido {
+    transform: translateY(0%);
+}
+.modal .encabezado{
+    width: 100%;
+    justify-content: flex-start;
+    padding: 5px 20px;
+    box-sizing: border-box;
+    background-color: #04D99D;
+}
+.contenido .encabezado i {
+    font-size: 25px;
+    color: white;
+    margin: 20px;
+}
+
+.contenido .cerrar {
+    position: absolute;
+    top: -18px;
+    right: -21px;
+    cursor: pointer;
+    border: #04D99D solid 4px;
+    border-radius: 100px;
+    padding: 5px 10px;
+    background: white;
+    font-size: 18px;
+    font-weight: bold;
+    color: #04D99D;
+}
+
+main form {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.contenedorinput {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+.contenedorinput input {
+    width: calc(35%);;
+    padding: 5px 9px;
+    border-radius: 4px;
+    margin: 5px;
+}
+
+.contenedorinput select {
+    width: calc(40%);;
+    padding: 5px 9px;
+    border-radius: 4px;
+    margin: 5px;
+}
+
+.contenedorinput label {
+    width: calc(50% - 5px);
+    padding: 5px;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.contenedorinput2 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: auto;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.contenedorinput2 input {
+    padding: 5px;
+    border-radius: 4px;
+    margin-left: 18px;
+}
+
+.contenedorinput2 label {
+    width: 35%;
+    margin-left:5px ;
+    text-align: left;
+}
+
+.contenedorinput3{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+.contenedorinput3 label{
+    width: 25%;
+    margin-left:5px ;
+    text-align: left;
+}
+
+.contenedorinput3 input {
+    width: calc(10%);;
+    padding: 5px 9px;
+    border-radius: 4px;
+    margin: 5px;
+}
+
+.btn-guardar {
+    width: 90px;
+    height: 30px;
+    align-self: flex-end;
+    padding: 5px;
+    margin-bottom: 15px;
+    margin-right: 8%;
+    background-color: #04D99D;
+    border:#04D99D 1px solid;
+    color:white;
+}

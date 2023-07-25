@@ -1,0 +1,268 @@
+.modal-login {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  transition: all 500ms ease;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 100;
+}
+
+.ingresar-datos form{
+  margin: auto;
+}
+
+/* hace visible el login */
+#btn-modal-login:checked~.modal-login {
+  opacity: 1;
+  visibility: visible;
+}
+
+.contenedor-login {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  background: white;
+  transition: all 500ms ease;
+  position: relative;
+  transform: translateY(-30%);
+  border-radius: 15px;
+  padding: 20px 20px;
+  border: solid #04D99D 2px;
+  margin-top: 200px;
+}
+#carrito {
+  font-size: 2.18em;
+  color: #04D99D;
+  margin-bottom: 1em;
+  margin-left: 1em;
+}
+
+#btn-modal-login:checked~.modal .contenedor-login {
+  transform: translateY(0%);
+}
+
+.contenedor-login header {
+  background-color: white;
+  width: 100%;
+}
+
+.lbl-modal-login {
+  color: #04D99D;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 20px;
+  margin-bottom: 1em;
+  margin-left: 1em;
+}
+
+.lbl-modal-login a i {
+  color: #04D99D;
+  padding: 5px 5px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+#btn-modal-login {
+  display: none;
+}
+
+.contenido-login div {
+  margin-bottom: 5px;
+  width:90%;
+}
+
+.contenedorInput-login {
+  display: flex;
+  width: 100%;
+  justify-content: end;
+  align-items: center;
+  column-gap: 15px;
+  font-size: 1.6em;
+}
+
+.contenedorInput-login input {
+  padding: 5px;
+  border-radius: 4px;
+}
+
+.btn-login {
+  margin: auto;
+  padding: 5px 30px;
+  display: flex;
+  text-align: center;
+}
+
+.logo-login {
+  width: 350px;
+}
+
+.cerrar {
+  position: absolute;
+  top: -18px;
+  right: -21px;
+  cursor: pointer;
+  border: #000 solid 4px;
+  border-radius: 100px;
+  padding: 5px 10px;
+  background: white;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.registrarse-login {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: auto;
+}
+
+
+.contraseña-olvidada-login {
+  display: flex;
+  justify-content: end;
+  padding: 0px 0px 15px 0px;
+  text-decoration: none;
+  color: black; 
+  width: 90%;
+}
+
+.contenido-login a:hover {
+  color: #000000;
+}
+
+.modal-register {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  transition: all 500ms ease;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 100;
+}
+
+#btn-modal-register:checked~.modal-register {
+  opacity: 1;
+  visibility: visible;
+}
+
+#btn-modal-register:checked .modal-login {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.contenedor-register {
+  margin: auto;
+  background: white;
+  transition: all 500ms ease;
+  position: relative;
+  transform: translateY(-30%);
+  border-radius: 10px;
+  padding: 38px 20px;
+  border: solid #04D99D 2px;
+
+}
+
+#btn-modal-register:checked~.modal-register .contenedor-register {
+  transform: translateY(0%);
+}
+
+.contenedor-register header {
+  text-align: center;
+}
+
+.contenedor-register #btn-modal-close-cancelar-register {
+  cursor: pointer;
+  border: #04D99D solid 2px;
+  padding: 5px 10px;
+  background: #04D99D;
+  border-radius: 5px;
+  color: white;
+}
+
+.contenedor-register #btn-modal-close-guardar-register {
+  cursor: pointer;
+  border: #04D99D solid 2px;
+  padding: 5px 10px;
+  background: #04D99D;
+  border-radius: 5px;
+  color: white;
+}
+
+.lbl-modal-register {
+  color: #04D99D;
+  text-decoration: underline;
+  cursor: pointer;
+  padding-left: 5px;
+}
+
+#btn-modal-register {
+  display: none;
+}
+
+.contenido-register div {
+  margin-bottom: 10px;
+}
+
+.contenedorInput-register {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 15px;
+}
+
+.contenedorInput-register input {
+  padding: 5px;
+  border-radius: 4px;
+}
+
+.btn-guardar-register {
+  margin-left: auto;
+  padding: 5px 20px;
+  display: flex;
+}
+
+.casita-register {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.casita-register img {
+  width: 170px;
+  height: 100px;
+}
+
+.botones-register {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 25px;
+}
+
+.contenido-login .btn-login {
+  padding: 8px 25px;
+  background-color: #d90404;
+  border-radius: 4px;
+  color: white;
+  justify-content: center;
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+#cargaimg {
+  width: 100px;
+  height:100px;
+}

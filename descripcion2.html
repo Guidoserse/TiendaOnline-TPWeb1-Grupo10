@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/d29453ffcf.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" type="text/css" href="css/slick.css" />
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/estilos.css" />
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/descripcion.css" />
+    <title>descripcion</title>
+  </head>
+
+  <body>
+    <header>
+      <section class="encabezado">
+        <a href="index.html"><img src="img/LOGOHEADER.png" alt="logo" id="logo" /></a>
+
+        <form action="">
+          <label for="buscador"></label>
+          <input
+            type="search"
+            id="buscador"
+            name="buscador"
+            placeholder="Buscador"
+          />
+        </form>
+
+        <label for="btn-modal-login" class="lbl-modal-login"><a href=""><i class="fa-solid fa-user"></i></a> Log-in</label>
+      <input type="checkbox" id="btn-modal-login" />
+      <div class="modal-login">
+        <div class="contenedor-login">
+            <img src="img/LOGOHEADER.png" alt="logo" class="logo-login" />
+            <label for="btn-modal-login" class="cerrar">X</label>
+          <div class="ingresar-datos">
+            <form action="#" class="contenido-login" id="login">
+              <div class="contenedorInput-login">
+                <label for="usuario">Usuario</label>
+                <input type="text" name="usuario" id="usuario" placeholder="Ingrese usuario" required />
+              </div>
+              <div class="contenedorInput-login">
+                <label for="contraseña">Contraseña</label>
+                <input type="password" id="contraseña" name="contraseña" placeholder="Ingrese contraseña" required />
+              </div>
+              <a href="#" class="contraseña-olvidada-login">¿Olvidaste la contraseña?</a>
+              <input type="submit" value="LOGIN" class="btn-login" id="login-boton">
+              <p class="registrarse-login">
+                ¿No tenés cuenta?
+                <!--<label for="btn-modal-register" class="lbl-modal-register">Registrarse</label>-->
+                <a href="registro.html" class="lbl-modal-register">Registrarse</a>
+            </p>
+              <input type="checkbox" id="btn-modal-register" />
+              <div class="modal-register">
+                <div class="contenedor-register">
+                  <header class="casita-register">
+                    <img src="img/cargaimagen.png" alt="casita" id="cargaimg"/>
+                    <div class="contenedorInput-register">
+                      <input type="file" id="archivo" name="archivo" />
+                    </div>
+                  </header>
+                </form>
+                  <div>
+                    <form action="#" class="contenido-register" id="formulario">
+                      <div class="contenedorInput-register">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Ingrese email" required />
+                      </div>
+                      <div class="contenedorInput-register">
+                        <label for="nombre-register">Nombre</label>
+                        <input type="text" id="nombre-register" placeholder="Ingrese nombre" required />
+                      </div>
+                      <div class="contenedorInput-register">
+                        <label for="apellido">Apellido</label>
+                        <input type="text" id="apellido" placeholder="Ingrese Apellido" required/>
+                      </div>
+                      <div class="contenedorInput-register">
+                        <label for="password">Contraseña</label>
+                        <input type="password" id="password" placeholder="Ingrese contraseña" required />
+                      </div>
+                      <div class="contenedorInput-register">
+                        <label for="repetir">Repetir contraseña</label>
+                        <input type="password" id="repetir" placeholder="Repita contraseña" required />
+                      </div>
+                      <div class="botones-register">
+                        <label for="btn-modal-register" id="btn-modal-close-cancelar-register">Cancelar</label>
+                        <input type="submit" value="Enviar" id="btn-modal-close-guardar-register">
+                      </div>
+                      <div id="mensajeDeError" class="mensajeError">
+                    </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+        <a href="carrito.html" id="carrito"
+          ><i class="fa-sharp fa-solid fa-cart-shopping"></i
+        ></a>      <p id="cantidadDeProductos">0</p>
+
+      </section>
+    </header>
+    <nav>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="categorias1.html">Categorías</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li class="mi-cuenta"><a href="micuenta.html">Mi Cuenta</a></li>
+        </ul>
+    </nav>
+
+    <main>
+      <section class="descrip">
+        <article id="artdesc">
+          <img src="img/fanta.jpg" alt="imagenfanta" />
+          <p id="precio">$420</p>
+        </article>
+
+        <article id="descrip2">
+          <h3 id="tituloprod">Fanta 2.25 litros</h3>
+          <p id="texto">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
+            deserunt enim impedit. Aspernatur tempora libero iusto sequi, eaque
+            velit! Veniam, perferendis ipsa aliquid illum quisquam hic eius
+            veritatis perspiciatis odit.
+          </p>
+          <div>
+            <input type="number" min="1" id="cantidad-descripcion" />
+            <a href="" id="carro">Agregar</a>
+          </div>
+        </article>
+      </section>
+
+      <h1 class="categoria_titulo">Productos similares</h1>
+
+      <aside class="productosSimilares slider">
+        <div class="productoSimilar">
+          <a href="descripcion3.html"><img src="img/sprite.jpg" alt="sprite" /></a>
+          <p id="preciop">$410</p>
+          <p id="nombre">Sprite 2.25 Litros</p>
+          <input type="number" min="1" />
+          <a href="" id="carritoir"><i class="fa-sharp fa-solid fa-cart-shopping"></i></a>
+        </div>
+        <div class="productoSimilar">
+          <a href="descripcion2.html"><img src="img/fanta.jpg" alt="aguamineral" /></a>
+          <p id="preciop">$410</p>
+          <p id="nombre">Fanta 2.25 Litros</p>
+          <input type="number" min="1" />
+          <a href="" id="carritoir"><i class="fa-sharp fa-solid fa-cart-shopping"></i></a>
+        </div>
+        <div class="productoSimilar">
+          <a href="descripcion.html"><img src="img/imagencoca.jpg" alt="aguamineral" /></a>
+          <p id="preciop">$420</p>
+          <p id="nombre">Coca Cola 2,25L</p>
+          <input type="number" min="1" />
+          <a href="" id="carritoir"><i class="fa-sharp fa-solid fa-cart-shopping"></i></a>
+        </div>
+        <div class="productoSimilar">
+          <a href="descripcion4.html"><img src="img/levite.jpg" alt="aguamineral" /></a>
+          <p id="preciop">$410</p>
+          <p id="nombre">Levite 2 Litros</p>
+          <input type="number" min="1" />
+          <a href="" id="carritoir"><i class="fa-sharp fa-solid fa-cart-shopping"></i></a>
+        </div>
+      </aside>
+    </main>
+    <footer>
+      <aside class="piedepagina">
+        <div class="columna1">
+          <img src="img/LOGOHEADER.png" alt="logo" />
+          <p>
+            <i class="fa-solid fa-clock"></i> Lunes a Sabado de 8 a 14hs y de 16
+            a 20hs
+          </p>
+        </div>
+        <div class="columna2">
+          <p>Datos del Grupo:</p>
+          <p>
+            Sersewitz Guido-42951948<br />
+            Martinez Marcos- 38046528<br />
+            Aquino Mariana - 43032501 <br />
+            Sosa Ortiz Andrea - 38466989
+        </p>
+        </div>
+        <div class="columna3">
+          <p>Seguinos en</p>
+          <div class="iconos-redes">
+            <a href="https://es-la.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram" width:70px></i></a>  
+          </div></div>
+      </aside>
+    </footer>
+    <script src="js/login.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/carrito.js"></script>
+    <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $('.slider').slick({
+          dots: true,
+          autoplay: true,
+          infinite: true,
+          speed: 300,
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                infinite: true,
+                dots: true
+              }
+            },
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2
+              }
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+              }
+            }
+          ]
+        });
+      });
+    </script>
+  </body>
+</html>

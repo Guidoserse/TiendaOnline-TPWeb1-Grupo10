@@ -1,0 +1,354 @@
+.categoria_titulo {
+    color: white;
+}
+
+.descrip {
+    padding: 5px;
+    width: 70%;
+    height: 320px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: auto;
+    align-items: center;
+    border-top: #F27405 solid 10px;
+}
+
+
+#artdesc {
+    position: relative;
+    height: 250px;
+    width: 300px;
+    background-color: #FFBF00;
+    border-radius: 60px 0 60px 0;
+
+}
+
+.descrip img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+#precio {
+    position: absolute;
+    display: block;
+    width: 80px;
+    height: 30px;
+    background-color: #F27405;
+    border-radius: 15px 0 0 15px;
+    bottom: 20%;
+    right: 0%;
+    margin: auto;
+    font-style: italic;
+    text-align: center;
+    font-size: large;
+    padding-top: 5px;
+    color: white;
+}
+
+
+#carro {
+    background-image: url(../img/carritosi.jpg);
+    background-repeat: no-repeat;
+    display: block;
+    z-index: 3;
+    width: 100px;
+    height: 25px;
+    background-size: 30px 25px;
+    border: #F27405 solid 2px;
+    padding: 10px 10px 10px 7px;
+    background-position: 75px 10px;
+
+}
+
+
+#texto {
+    height: 30%;
+    width: 100%;
+    left: 0%;
+    top: 20%;
+}
+
+#tituloprod {
+    height: 20%;
+    width: 100%;
+    left: 0px;
+    z-index: 5;
+    color: black;
+    font-size: 25px;
+    top: 7%;
+
+}
+
+#descrip2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 250px;
+    width: 400px;
+    right: 20%;
+    z-index: 0;
+}
+
+#descrip2 div {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#cantidad-descripcion {
+    height: 30px;
+    width: 50px;
+    right: 130px;
+    bottom: 2%;
+    text-align: center;
+    margin: 10px;
+}
+
+/* .prodSimilar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin:auto;
+    width: 90%;
+    height: 300px;
+    justify-content: space-around;
+
+   display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 90%;
+    height: 300px;
+    border: #04D99D solid 10px;
+    margin: auto;
+    border-radius: 60px 0 60px 0;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}*/
+
+
+/*#similares1,
+#similares12,
+#similares13,
+#similares4,
+#similares5 {
+    display: block;
+    background-image: url(../img/sprite.jpg);
+    background-size: 200px 180px;
+    width: 200px;
+    height: 180px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    left: 30px;
+}
+
+#similares22,
+#similares13,
+#similares34 {
+    position: absolute;
+    display: block;
+    background-image: url(../img/imagencoca.jpg);
+    background-size: 200px 180px;
+    width: 200px;
+    height: 180px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    left: 30px;
+}
+
+#similares2,
+#similares23,
+#similares24 {
+    position: absolute;
+    display: block;
+    background-image: url(../img/fanta.jpg);
+    width: 200px;
+    height: 180px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    left: 30px;
+}
+
+#similares3,
+#similares32,
+#similares33 {
+    position: absolute;
+    display: block;
+    background-image: url(../img/levite.jpg);
+    width: 200px;
+    height: 180px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+}
+
+#nombresimilar {
+    position: absolute;
+    display: block;
+    height: 40px;
+    width: 235px;
+    bottom: 0%;
+    font-size: 20px;
+    background-color: #04D99D;
+    border: #04D99D solid 2px;
+    border-top: white solid 2px;
+    margin: auto;
+    border-radius: 0px 0 60px 0;
+    left: 0%;
+    color: white;
+}
+
+.prodSimilar div {
+    height: 220px;
+    width: 200px;
+    border-radius: 60px 0 60px 0;
+    background-color: #04D99D;
+}
+
+#productosimilar1 {
+    display: flex;
+    height: 220px;
+    padding: 10px;
+    width: 223px;
+    border-radius: 60px 0 60px 0;
+}
+
+#productosimilar2 {
+    display: flex;
+    height: 220px;
+    padding: 10px;
+    width: 223px;
+    border-radius: 60px 0 60px 0;
+}
+
+#productosimilar3 {
+    right: 5%;
+    display: flex;
+    height: 220px;
+    width: 223px;
+    padding: 10px;
+    border-radius: 60px 0 60px 0;
+}
+
+#preciosimilar {
+    position: absolute;
+    display: block;
+    width: 80px;
+    height: 30px;
+    background-color: #F27405;
+    border-radius: 30% 0 0 30%;
+    bottom: 20%;
+    right: 0%;
+    margin: auto;
+    font-style: italic;
+    text-align: center;
+    font-size: large;
+    padding-top: 5px;
+    color: white;
+}*/
+
+.productosSimilares {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    width: 95%;
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+
+  .productoSimilar {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    width: calc(25% - 10px);
+    padding-top: 25px;
+    padding-bottom: 18px;
+    box-sizing: border-box;
+    height: 280px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transition: 0.5s;
+    transform: scale(1);
+    position: relative;
+  }
+  
+  .productoSimilar a img {
+    width: 160px;
+    height: 180px;
+    border-radius: 100%;
+    transform: scale(1);
+    transition: 1s;
+    position: absolute;
+    left: 100px;
+  }
+
+  .productoSimilar:hover{
+    border-radius: 15px;
+    border: #04D99D 1px solid;
+    transition: 0s;
+  }
+  
+  .productoSimilar a img:hover {
+    transform: scale(1.2);
+  }
+
+
+  #nombre {
+    position: absolute;
+    bottom: 2px;
+    border-radius: 10px;
+    background-color: #04D99D;
+    left: 6px;
+    height: 30px;
+    width: 95%;
+    text-align: left;
+    font-style: italic;
+    font-size: 20px;
+    color: white;
+    padding-top: 2px;
+    padding-left: 10px;
+    box-sizing: border-box;
+  }
+  
+  .productoSimilar input {
+    width: 40px;
+    height: 20px;
+    position: absolute;
+    bottom: 39px;
+    right: 10px;
+    font-size: 17px;
+    text-align: center;
+  }
+  
+  #preciop {
+    position: absolute;
+    width: 70px;
+    height: 30px;
+    background-color: #F27405;
+    border-radius: 15px 0 0 15px;
+    bottom: 70px;
+    padding-top: 12px;
+    right: 0%;
+    border: #F27405 1px solid;
+    font-style: italic;
+    text-align: center;
+    color: white;
+  }
+  
+  #carritoir {
+    color: white;
+    position: absolute;
+    bottom: 5px;
+    right: 15px;
+    font-size: 20px;
+  }
